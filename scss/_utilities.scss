@@ -1,0 +1,89 @@
+// Containers
+.container {
+  width: $website-width;
+  max-width: $website-width;
+  border: 1px solid red;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $dark-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  &.text-light {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+span {
+  &.highlight {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem 1rem;
+  // box-shadow: 0.5px 0.5px 5px 1px rgba(169, 169, 169, 0.7);
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    transition: transform 150ms;
+  }
+
+  &:active {
+    transform: scale(0.93);
+  }
+
+  &-dark {
+    @extend .btn;
+    background-color: #972e1b;
+    color: $light-color;
+  }
+  &-dark:hover {
+    box-shadow: 1pt 3pt 2pt 1pt rgba(224, 104, 82, 0.9);
+  }
+
+  &-light {
+    @extend .btn;
+    background-color: #fff;
+    color: $dark-color;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  &-light:hover {
+    box-shadow: 1pt 3pt 2pt 1pt rgba(86, 185, 235, 0.8);
+  }
+}
