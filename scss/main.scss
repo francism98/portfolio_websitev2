@@ -129,44 +129,48 @@
   justify-content: center;
   align-items: center;
   .container {
-    width: 90%;
-    height: 90%;
+    position: relative;
+    width: 40%;
+    height: 95%;
     display: flex;
-    flex-direction: row;
-    column-gap: 10rem;
-    // align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
     border: 1px solid $dark-color;
+    border-bottom: none;
+    // overflow: hide;
+    margin-top: 30px;
   }
   .project-description {
     background-color: #fffdf6;
-    padding-top: 70px;
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 100px;
     padding: 1rem 3rem;
-    margin-top: 20px;
+    // margin-top: 20px;
+    transform: translateY(-30%);
+    border: 1px solid $dark-color;
+    text-align: center;
   }
   .project-samples {
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
+    width: 500px;
     height: 500px;
-    // border: 1px solid black;
     // overflow: hidden;
   }
 }
 .container-project {
-  // cursor: pointer;
+  // background-color: $light-color;
   position: relative;
-  width: 430px;
+  width: 650px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: cetner;
-  border-bottom: 3px dotted $dark-color;
-  padding: 1em 0;
+  border-top: 3px dotted $dark-color;
+  padding: 1em 2rem;
 
   a {
     position: absolute;
@@ -178,6 +182,7 @@
   }
   h2 {
     font-family: $font-body;
+    font-size: 4rem;
   }
   p {
     font-size: 1em;
@@ -195,9 +200,9 @@
   &:nth-of-type(1) {
     border-top: 1px solid $dark-color;
   }
-  &:last-of-type {
-    border-bottom: 1px solid $dark-color;
-  }
+  // &:last-of-type {
+  //   border-bottom: 1px solid $dark-color;
+  // }
 }
 // Portfolio showcase - inside Projects section
 #project {
@@ -205,8 +210,8 @@
   }
   &::after {
     opacity: 0;
-    box-shadow: 0 1px 5px 2px rgba($color: #000000, $alpha: 0.4);
-    top: -220%;
+    box-shadow: 0 1px 5px 2px rgba($color: $dark-color, $alpha: 0.4);
+    top: -170%;
     left: 70%;
     position: absolute;
     display: inline-block;
@@ -287,7 +292,7 @@
     overflow: hidden; // Turn off and on to check on contents
     background-color: #f3d67f;
     position: relative;
-    top: -40px;
+    top: -30px;
     left: -30px;
     width: 550px;
     height: 775px;
