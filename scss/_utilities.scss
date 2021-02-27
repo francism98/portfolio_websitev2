@@ -2,7 +2,8 @@
 .container {
   width: $website-width;
   max-width: $website-width;
-  border: 1px solid red;
+  // border: 1px solid red;
+  border-top: none;
 }
 
 body {
@@ -51,6 +52,7 @@ span {
 
 img {
   width: 100%;
+  background-repeat: no-repeat;
 }
 
 .btn {

@@ -16,22 +16,25 @@
 
 @keyframes showcase {
   0% {
-    transform: scale(0.6) translateY(120%);
+    transform: scale(0.7) translateY(50%);
   }
-  20% {
-    transform: scale(0.8) translateY(-100%);
+  15% {
+    transform: scale(0.9) translateY(-90%);
   }
-  35% {
-    transform: scale(0.8) translateY(-150%);
+  25% {
+    transform: scale(0.9) translateY(-150%);
   }
+  // 35% {
+  //   transform: scale(0.9) translateY(-200%);
+  // }
   50% {
-    transform: scale(0.8) translateY(-200%);
+    transform: scale(0.9) translateY(-250%);
   }
-  80% {
-    transform: scale(0.8) translateY(-300%);
+  75% {
+    transform: scale(0.9) translateY(-350%);
   }
 
   100% {
-    transform: scale(0.6) translateY(-550%);
+    transform: scale(0.7) translateY(-550%);
   }
 }
