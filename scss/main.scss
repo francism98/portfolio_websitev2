@@ -220,7 +220,7 @@
 }
 
 #project1::after {
-  background: url(/dist/img/work1.png) no-repeat center center/cover;
+  background: url(../img/work1.png) no-repeat center center/cover;
   @extend #project;
 }
 #project1:hover::after {
@@ -228,7 +228,7 @@
   opacity: 1;
 }
 #project2::after {
-  background: url(/dist/img/work2.png) no-repeat center center/cover;
+  background: url(../img/work2.png) no-repeat center center/cover;
   @extend #project;
 }
 #project2:hover::after {

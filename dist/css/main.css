@@ -243,14 +243,14 @@ img {
   transition: transform 300ms, opacity 300ms; }
 
 #project1::after {
-  background: url(/dist/img/work1.png) no-repeat center center/cover; }
+  background: url(../img/work1.png) no-repeat center center/cover; }
 
 #project1:hover::after {
   transform: scale(1);
   opacity: 1; }
 
 #project2::after {
-  background: url(/dist/img/work2.png) no-repeat center center/cover; }
+  background: url(../img/work2.png) no-repeat center center/cover; }
 
 #project2:hover::after {
   transform: scale(1);
