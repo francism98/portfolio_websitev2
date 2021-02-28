@@ -1,14 +1,17 @@
 // Containers
 .container {
-  width: $website-width;
+  width: 90vw;
   max-width: $website-width;
-  // border: 1px solid red;
-  border-top: none;
+  border: 1px solid red;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: $dark-color;
+}
+
+section {
+  width: 100vw;
 }
 
 a {
@@ -28,25 +31,17 @@ h4 {
 }
 
 h1 {
-  font-size: 2.9rem;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   &.text-light {
     font-size: 1.1rem;
     font-weight: 300;
-  }
-}
-
-span {
-  &.highlight {
-    font-family: "Playfair Display", serif;
-    font-size: 1.3rem;
-    font-weight: bold;
   }
 }
 
