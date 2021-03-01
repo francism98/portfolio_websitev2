@@ -182,17 +182,17 @@ body {
   .project-preview1,
   .project-preview2 {
     position: absolute;
-    top: 33%;
+    top: 30%;
     left: 8%;
-    height: 60%;
+    width: 58%;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
     border: 1px solid $dark-color;
     visibility: hidden;
     // opacity: 0;
     z-index: 3;
     img {
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     }
     transition: opacity 500ms;
     pointer-events: none;

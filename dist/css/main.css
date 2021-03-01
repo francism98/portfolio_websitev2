@@ -266,9 +266,9 @@ body {
   #projects .project-preview1,
   #projects .project-preview2 {
     position: absolute;
-    top: 33%;
+    top: 30%;
     left: 8%;
-    height: 60%;
+    width: 58%;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
     border: 1px solid #484349;
     visibility: hidden;
@@ -277,8 +277,8 @@ body {
     pointer-events: none; }
     #projects .project-preview1 img,
     #projects .project-preview2 img {
-      width: auto;
-      height: 100%; }
+      width: 100%;
+      height: auto; }
   #projects .project-preview1.show,
   #projects .project-preview2.show {
     opacity: 1;
