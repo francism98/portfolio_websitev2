@@ -232,8 +232,8 @@ body {
     margin-bottom: 1rem; }
 
 #projects {
-  background-color: #484349;
-  height: 90vh;
+  background-color: #e7d27c;
+  height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 1rem;
@@ -266,10 +266,11 @@ body {
   #projects .project-preview1,
   #projects .project-preview2 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    height: 70%;
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.7);
+    top: 33%;
+    left: 8%;
+    height: 60%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid #484349;
     visibility: hidden;
     z-index: 3;
     transition: opacity 500ms;
@@ -283,10 +284,10 @@ body {
     opacity: 1;
     visibility: visible;
     transition: opacity 500ms; }
-  #projects .container.project1 {
-    background-color: #ecf5ff; }
-  #projects .container.project2 {
-    background-color: #ffffeb; }
+  #projects .container.project1 #project1 h2 {
+    font-weight: 800; }
+  #projects .container.project2 #project2 h2 {
+    font-weight: 800; }
 
 .container-project {
   position: relative;
@@ -301,13 +302,14 @@ body {
   .container-project a {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
     z-index: 1; }
   .container-project h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 100;
     transform: translateX(5%); }
   .container-project p {
     font-size: 1em;
@@ -330,7 +332,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid #484349;
-    box-shadow: 1.5px 1.5px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     position: relative; }
     #about .container .about-description {
       background-color: #fffdf6;
@@ -354,10 +356,12 @@ body {
     #about .about-second img {
       width: 50%; }
   #about .about-first {
-    background-color: #fff; }
+    background-color: #fff;
+    padding-right: 5rem; }
   #about .about-second {
     text-align: right;
-    background-color: #f6d9dd; }
+    background-color: #f6d9dd;
+    padding-left: 4rem; }
   #about .about-text, #about .about-text1, #about .about-text2 {
     position: relative;
     padding: 2rem 2rem; }
@@ -386,6 +390,7 @@ body {
     margin-bottom: 1rem; }
 
 #current-state {
+  margin-top: 2rem;
   height: 70vh;
   display: flex;
   justify-content: center; }
@@ -395,7 +400,7 @@ body {
     flex-direction: column;
     align-items: center; }
     #current-state .container h1 {
-      font-size: 4rem; }
+      font-size: 5rem; }
     #current-state .container .container-card {
       display: flex;
       flex-direction: row;
@@ -403,40 +408,48 @@ body {
       column-gap: 3rem;
       width: 100%;
       height: 100%;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      color: #484349; }
       #current-state .container .container-card .card {
         background-color: #fff;
         display: flex;
         flex-direction: column;
         width: 30%;
+        border: 1px solid #484349;
         text-align: center;
-        border-radius: 20px;
         box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
         transition: transform 500ms; }
         #current-state .container .container-card .card:hover {
           transform: scale(1.1) translateY(-10px);
           transition: transform 500ms; }
-        #current-state .container .container-card .card h2 {
-          font-family: "Open Sans", sans-serif;
-          border-radius: 20px 20px 0 0; }
         #current-state .container .container-card .card h2.front {
-          background-color: #baffc9; }
+          background-color: #baffc9;
+          padding: 0.5rem;
+          margin-bottom: 0.5rem; }
         #current-state .container .container-card .card h2.back {
-          background-color: #bae1ff; }
-        #current-state .container .container-card .card ul li {
-          font-size: 1.3rem;
-          padding: 0.5rem 1rem;
-          text-align: left; }
-        #current-state .container .container-card .card ul li::before {
-          font-size: 1.5rem;
-          padding: 0 2rem;
-          font-family: "Font Awesome 5 Free";
-          content: "\f0c8"; }
-        #current-state .container .container-card .card ul li.mark::before {
-          font-size: 1.5rem;
-          padding: 0 2rem;
-          font-family: "Font Awesome 5 Free";
-          content: "\f14a"; }
+          background-color: #bae1ff;
+          padding: 0.5rem;
+          margin-bottom: 0.5rem; }
+        #current-state .container .container-card .card ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 100%;
+          padding: 0.1rem; }
+          #current-state .container .container-card .card ul li {
+            font-size: 1.2rem;
+            padding: 0rem 1rem;
+            text-align: left; }
+          #current-state .container .container-card .card ul li::before {
+            font-size: 1.5rem;
+            padding: 0rem 2rem;
+            font-family: "Font Awesome 5 Free";
+            content: "\f111"; }
+          #current-state .container .container-card .card ul li.mark::before {
+            font-size: 1.5rem;
+            padding: 0rem 2rem;
+            font-family: "Font Awesome 5 Free";
+            content: "\f058"; }
 
 #contact {
   height: 60vh;
@@ -475,19 +488,19 @@ footer {
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      color: #fff;
+      color: #ffffeb;
       row-gap: 1rem; }
     footer .container .links-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      color: #fff; }
+      color: #ffffeb; }
       footer .container .links-container .links {
         margin-top: 1.5rem; }
         footer .container .links-container .links a {
           margin-right: 1rem;
-          color: #fff; }
+          color: #ffffeb; }
 
 @media screen and (max-width: 375px) {
   #main-nav {

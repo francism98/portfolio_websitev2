@@ -137,9 +137,9 @@ body {
 
 // SECTION: Projects
 #projects {
-  background-color: $bg-dark;
-  // background-color: $light-color;
-  height: 90vh;
+  // background-color: $bg-dark;
+  background-color: $secondary-color;
+  height: 100vh;
   display: flex;
   justify-content: center;
   // align-items: center;
@@ -182,10 +182,11 @@ body {
   .project-preview1,
   .project-preview2 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    height: 70%;
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.7);
+    top: 33%;
+    left: 8%;
+    height: 60%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid $dark-color;
     visibility: hidden;
     // opacity: 0;
     z-index: 3;
@@ -204,10 +205,16 @@ body {
   }
   // Added effects when a project is hovered
   & .container.project1 {
-    background-color: #ecf5ff;
+    // background-color: #d3e8ff;
+    #project1 h2 {
+      font-weight: 800;
+    }
   }
   & .container.project2 {
-    background-color: $primary-color;
+    // background-color: #ffffb8;
+    #project2 h2 {
+      font-weight: 800;
+    }
   }
 }
 // Project containers as part of the 'Projects' section
@@ -226,14 +233,15 @@ body {
   a {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
     z-index: 1;
   }
   h2 {
     font-family: $font-sans;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 100;
     transform: translateX(5%);
   }
   // h2::after {
@@ -310,7 +318,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid $dark-color;
-    box-shadow: 1.5px 1.5px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     position: relative;
     // overflow: hidden;
     .about-description {
@@ -340,10 +348,12 @@ body {
   .about-first {
     background-color: $bg-light;
     // color: $light-color;
+    padding-right: 5rem;
   }
   .about-second {
     text-align: right;
     background-color: #f6d9dd;
+    padding-left: 4rem;
   }
   .about-text {
     // text-align: center;
@@ -398,6 +408,7 @@ body {
 // SECTION: Current-State
 #current-state {
   // background-color: #b5ead7;
+  margin-top: 2rem;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -407,9 +418,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // color: $secondary-color;
 
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     .container-card {
       display: flex;
@@ -420,6 +432,7 @@ body {
       height: 100%;
       // border: 1px solid black;
       margin: 3rem 0;
+      color: $dark-color;
 
       .card {
         background-color: $bg-light;
@@ -427,9 +440,9 @@ body {
         flex-direction: column;
         width: 30%;
 
-        // border: 1px solid blue;
+        border: 1px solid $dark-color;
         text-align: center;
-        border-radius: 20px;
+        // border-radius: 20px;
         box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
         transition: transform 500ms;
 
@@ -438,34 +451,41 @@ body {
           transition: transform 500ms;
         }
         h2 {
-          font-family: $font-sans;
-          border-radius: 20px 20px 0 0;
         }
         h2.front {
           background-color: #baffc9;
+          padding: 0.5rem;
+          margin-bottom: 0.5rem;
         }
         h2.back {
           background-color: #bae1ff;
+          padding: 0.5rem;
+          margin-bottom: 0.5rem;
         }
         ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          // border: 1px solid black;
+          height: 100%;
+          padding: 0.1rem;
           li {
-            font-size: 1.3rem;
-            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            padding: 0rem 1rem;
             text-align: left;
           }
           li::before {
             font-size: 1.5rem;
-            padding: 0 2rem;
+            padding: 0rem 2rem;
             font-family: "Font Awesome 5 Free";
-            // font-weight: 900;
-            content: "\f0c8";
+            content: "\f111";
           }
           li.mark::before {
             font-size: 1.5rem;
-            padding: 0 2rem;
+            padding: 0rem 2rem;
             font-family: "Font Awesome 5 Free";
             // font-weight: 900;
-            content: "\f14a";
+            content: "\f058";
           }
         }
       }
@@ -516,7 +536,7 @@ footer {
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      color: $bg-light;
+      color: $primary-color;
       row-gap: 1rem;
     }
     .links-container {
@@ -524,13 +544,13 @@ footer {
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      color: $bg-light;
+      color: $primary-color;
       // row-gap: 0.4rem;
       .links {
         margin-top: 1.5rem;
         a {
           margin-right: 1rem;
-          color: $bg-light;
+          color: $primary-color;
         }
       }
     }
