@@ -1,8 +1,8 @@
 // Containers
 .container {
-  width: 90vw;
+  width: 95vw;
   max-width: $website-width;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 body {
@@ -23,6 +23,19 @@ ul {
   list-style: none;
 }
 
+h1.text-secondary,
+h2.text-secondary,
+h3.text-secondary,
+h4.text-secondary,
+span.text-secondary,
+p.text-secondary {
+  color: #e7d27c;
+}
+.text-outline {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +48,7 @@ h1 {
 }
 h2 {
   font-size: 2.2rem;
+  transition: -webkit-text-stroke 1000ms, -webkit-text-fill-color 1000ms;
 }
 
 p {
@@ -67,7 +81,8 @@ img {
 
   &-dark {
     @extend .btn;
-    background-color: #972e1b;
+    // background-color: #972e1b;
+    background-color: #9e6b55;
     color: $light-color;
   }
   &-dark:hover {

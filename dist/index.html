@@ -8,8 +8,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -26,24 +26,25 @@
         <img src="./img/flm_logo.png" alt="logo" id="logo">
         <ul>
           <!-- <li><a href="index.html"></a><a href="index.html" class="current">Home</a></li> -->
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
         <!-- <img class="logo-hidden" src="./img/flm_logo.png" alt="logo" id="logo"> -->
       </nav>
       <div class="header-content">
-        <!-- , "Web Designer", "Front-end Dev", "Back-end Dev", "Freelance Dev" -->
-        <h1>I am Francis The <span class="txt-type" data-wait="3000" data-words='["Junior Web Dev"]'></span><span
+        <h1>I am Francis The <span class="txt-type" data-wait="3000"
+            data-words='["Junior Web Dev", "Web Designer", "Front-end Dev", "Back-end Dev", "Freelance Dev"]'></span><span
             id="cursor">|</span></h1>
-        <p>I am a junior developer currently pursuing a career in web development. I am on the lookout for opportunities
+        <p>I am a junior developer currently pursuing a career in web development. I am on the lookout for
+          opportunities
           for growth both
           personal and career-wise.
         </p>
         <!-- <p class="text-light">Feel free to contact me for questions or other inquiries.</p> -->
         <div class="cta-container">
-          <a href="projects.html" class="btn-dark">View My Work</a>
-          <a href="projects.html" class="btn-light">Contact Me</a>
+          <a href="p" class="btn-dark">View My Work</a>
+          <a href="" class="btn-light">Contact Me</a>
         </div>
       </div>
     </div>
@@ -55,18 +56,27 @@
       </div>
       <div class="project-samples">
         <div class="container-project" id="project1">
-          <h2>TriviaMaster</h2>
-          <a href="https://triviamaster.netlify.app/"></a>
-          <p>A simple website where you can play trivia.</p>
+          <a href="https://triviamaster.netlify.app/">
+            <div class="project-preview1">
+              <img src="./img/work1.png" alt="preview img">
+            </div>
+            <h2>TriviaMaster</h2>
+            <p>A simple website where you can play trivia.</p>
+          </a>
         </div>
         <div class="container-project" id="project2">
-          <h2>Portfolio Site</h2>
-          <a href="https://francismanubag.netlify.app/"></a>
-          <p>The website you are in right now.</p>
+
+          <a href="https://francismanubag.netlify.app/">
+            <div class="project-preview2">
+              <img src="./img/work2.png" alt="preview img">
+            </div>
+            <h2>Portfolio Site</h2>
+            <p>The website you are in right now.</p>
+          </a>
           <!-- <img src="./img/work1.png" alt="This Site"> -->
         </div>
         <div class="container-project" disabled="disabled">
-          <h2>TBA</h2>
+          <h2><i class="fas fa-pencil-ruler"></i></h2>
           <p>Will update as new projects are made</p>
           <!-- <img src="./img/work1.png" alt="This Site"> -->
         </div>
@@ -74,39 +84,94 @@
       </div>
     </div>
   </section>
-  <section id="about">
-    <div class="container">
-      <div class="about-text1">
-        <h1>About Me</h1>
-        <p>I've been studying web development and design for the past couple of months. In the process of learning, I
-          have created a couple of small projects to practice and demonstrate what I have learned.</p>
-        <br>
-
-      </div>
-      <div class="about-showcase">
-        <img src="./img/showcase1.png" alt="" id="show1">
-        <img src="./img/showcase2.png" alt="" id="show2">
-        <img src="./img/showcase3.png" alt="" id="show3">
-      </div>
-      <div class="about-text2">
-        <h1 class="highlight">The Goal</h1>
-        <p>My goal is to expand my knowledge and mastery of <i>web</i> development and
-          for the
-          long term,
-          branch out to <i>software</i> and <i>mobile</i> development. I look forward to things that I will learn and
-          the people that
-          I'll meet along the way.</p>
-        <a href="projects.html" class="btn-dark">Know More</a>
-      </div>
-    </div>
-  </section>
   <section id="current-state">
     <div class="container">
       <h1>Where I'm At</h1>
+      <p>Take a look at my progress.</p>
+      <div class="container-card">
+        <div class="card">
+          <h2 class="front">Front End</h2>
+          <ul>
+            <li class="mark">HTML</li>
+            <li class="mark">CSS</li>
+            <li class="mark">Javascript</li>
+            <li class="mark">Sass</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>others ...</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 class="back">Back End</h2>
+          <ul>
+            <li class="mark">Javascript</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>REST API</li>
+            <li>JSON API</li>
+            <li>OAuth</li>
+            <li>others ...</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="contact"></section>
-  <footer id="main-footer"></footer>
+  <section id="about">
+    <div class="container">
+      <div class="about-description">
+        <h1>About</h1>
+      </div>
+      <div class="about-first">
+        <div class="about-text1">
+          <h1>About Me</h1>
+          <p>I've been studying web development and design for the past couple of months. In the process of learning, I
+            have created a couple of small projects to practice and demonstrate what I have learned.</p>
+          <br>
+        </div>
+        <img src="./img/web_developer.svg" alt="">
+      </div>
+      <div class="about-second">
+        <img src="./img/code_development.svg" alt="">
+        <div class="about-text2">
+          <h1 class="highlight">The Goal</h1>
+          <p>My goal is to expand my knowledge and mastery of <i>web</i> development and
+            for the
+            long term,
+            branch out to <i>software</i> and <i>mobile</i> development. I look forward to the things that I will learn
+            and the people I'll meet along the way.</p>
+          <!-- <a href="projects.html" class="btn-dark">Know More</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- <section id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+    </div>
+  </section> -->
+  <footer id="main-footer">
+    <div class="container">
+      <img src="./img/flm_logo.png" alt="logo" id="logo">
+      <div class="information-container">
+        <h2>Francis Lorenz Manubag</h2>
+        <p><i class="fas fa-phone-alt"></i> 977-417-0098</p>
+        <p><i class="fas fa-envelope"></i> francismanubag@gmail.com</p>
+      </div>
+      }
+      <div class="links-container">
+        <h2>Links</h2>
+        <p>Follow me on these websites.</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/francis-lorenz-manubag-440b061a1/"><i class="fab fa-linkedin"></i>
+            LinkedIn</a>
+          <a href="https://www.facebook.com/francis.manubag"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://twitter.com/Pansis_"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="https://github.com/francism98"><i class="fab fa-github"></i> Github</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="./js/typewriter.js"></script>
   <script src="./js/showcase.js"></script>
 </body>
