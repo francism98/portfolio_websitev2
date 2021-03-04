@@ -415,19 +415,24 @@ body {
         display: flex;
         flex-direction: column;
         width: 30%;
-        border: 1px solid #484349;
+        min-width: 250px;
+        min-height: 350px;
         text-align: center;
-        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.4);
         transition: transform 500ms; }
         #current-state .container .container-card .card:hover {
           transform: scale(1.1) translateY(-10px);
           transition: transform 500ms; }
         #current-state .container .container-card .card h2.front {
-          background-color: #baffc9;
+          background-color: #e7d27c;
+          border-radius: 20px 20px 0 0;
           padding: 0.5rem;
           margin-bottom: 0.5rem; }
         #current-state .container .container-card .card h2.back {
-          background-color: #bae1ff;
+          background-color: #9e6b55;
+          border-radius: 20px 20px 0 0;
+          color: #ffffeb;
           padding: 0.5rem;
           margin-bottom: 0.5rem; }
         #current-state .container .container-card .card ul {
@@ -597,7 +602,10 @@ footer {
     font-size: 1.4rem; }
   .container-project h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.2rem; } }
+    font-size: 2.2rem; }
+  .container-card {
+    display: block;
+    flex-direction: column; } }
 
 @media screen and (min-width: 512px) and (max-width: 640px) {
   .header-content h1 {
@@ -615,7 +623,10 @@ footer {
     font-size: 1.6rem; }
   .container-project h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.8rem; } }
+    font-size: 2.8rem; }
+  .container-card {
+    display: block;
+    flex-direction: column; } }
 
 @media screen and (min-width: 640px) and (max-width: 768px) {
   .header-content h1 {
@@ -635,7 +646,10 @@ footer {
     font-size: 2rem; }
   .container-project h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .container-card {
+    display: block;
+    flex-direction: column; } }
 
 @media screen and (min-width: 768px) and (max-width: 896px) {
   .header-content h1 {
